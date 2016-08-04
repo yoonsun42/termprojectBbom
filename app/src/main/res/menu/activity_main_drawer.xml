@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/boy"
+            android:icon="@drawable/btn_blank"/>
+        <item
+            android:id="@+id/girl"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/cap"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/t"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/pants"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/shoes"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/glass"
+            android:icon="@drawable/btn_blank"/>
+
+        <item
+            android:id="@+id/like"
+            android:icon="@drawable/btn_blank"/>
+
+    </group>
+</menu>

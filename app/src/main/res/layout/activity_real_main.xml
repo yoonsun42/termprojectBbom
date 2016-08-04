@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg_navi"
+        app:itemTextColor = "@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/icon_blank"
+            android:id="@+id/button_boy"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="150dp" />
+
+         <Button
+             android:layout_width="17dp"
+             android:layout_height="17dp"
+           android:background="@drawable/icon_blank"
+             android:layout_marginTop="40dp"
+             android:layout_below="@+id/button_boy"
+             android:layout_alignStart="@+id/button_boy"
+             android:id="@+id/button_girl" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_cap"
+                android:layout_below="@+id/button_girl"
+                android:layout_alignStart="@+id/button_girl"
+                android:layout_marginTop="52dp" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_t"
+                android:layout_below="@+id/button_cap"
+                android:layout_alignStart="@+id/button_cap"
+                android:layout_marginTop="43dp" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_pants"
+                android:layout_below="@+id/button_t"
+                android:layout_alignStart="@+id/button_t"
+                android:layout_marginTop="48dp" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_shoes"
+                android:layout_below="@+id/button_pants"
+                android:layout_alignStart="@+id/button_pants"
+                android:layout_marginTop="49dp" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_glass"
+                android:layout_below="@+id/button_shoes"
+                android:layout_alignStart="@+id/button_shoes"
+                android:layout_marginTop="49dp" />
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_blank"
+                android:id="@+id/button_like"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/button_glass"
+                android:layout_alignStart="@+id/button_glass"
+                android:layout_marginTop="47dp"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+    <!--app:headerLayout="@layout/nav_header_main"-->

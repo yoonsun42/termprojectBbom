@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_popup"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/icon_cancel"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_ok"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_t"
+                android:layout_margin="6dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_t_white"/>
+
+            <Button
+                android:id="@+id/btn_pants"
+                android:layout_margin="6dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_pants_white"/>
+
+            <Button
+                android:id="@+id/btn_shoes"
+                android:layout_margin="6dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_shoes_white"/>
+
+            <Button
+                android:id="@+id/btn_cap"
+                android:layout_margin="6dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_cap_white"/>
+
+            <Button
+                android:id="@+id/btn_glass"
+                android:layout_margin="6dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_glass_white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="이 름 : "
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10pt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="가 격: "
+            android:textSize="11pt"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="숫자만 입력해 주세요"
+            android:textSize="10pt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="파는곳 : "
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10pt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="정보 : "
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10pt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

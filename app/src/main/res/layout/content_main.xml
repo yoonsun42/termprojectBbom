@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.termprojectbbom.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/list"
+            android:numColumns="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="columnWidth"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:gravity="center">
+        </GridView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

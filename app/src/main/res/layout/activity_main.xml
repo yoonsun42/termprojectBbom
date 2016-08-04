@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="com.example.android.termprojectbbom.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_mainbar"
+            app:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            android:popupTheme="@style/AppTheme.AppBarOverlay">
+           <!-- app:navigationIcon="@drawable/icon_drawer" -->
+
+            <!--
+
+            <Button
+                android:id="@+id/drawer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_drawer"/>
+-->
+            <Button
+                android:id="@+id/btn_userinfo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/icon_profile"
+                android:layout_marginRight="15dp"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_add"
+        android:background="@color/fab_color"/>
+
+</android.support.design.widget.CoordinatorLayout>

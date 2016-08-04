@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.termprojectbbom.UploadActivity"
+    tools:showIn="@layout/activity_upload"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_cancel"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_ok"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="450dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="0.81">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_dark"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/drawingpane"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_alignLeft="@id/image"
+            android:layout_alignTop="@id/image"
+            android:layout_alignRight="@id/image"
+            android:layout_alignBottom="@id/image"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_camera"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_alignParentStart="false"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_t"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_t_white"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_pants"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_pants_white"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/image_shoes"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_shoes_white"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/image_cap"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_cap_white"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_glass"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_glass_white"
+            android:visibility="visible" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/btn_item_add"
+        android:id="@+id/btnAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>
