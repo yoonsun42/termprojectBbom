@@ -16,6 +16,9 @@ public class ItemInfo {
     private int x_end;
     private int y_end;
 
+    ItemInfo()
+    {
+    }
     ItemInfo(int kind, String name, int price, String mall, String info)
     {
         this.kind = kind;

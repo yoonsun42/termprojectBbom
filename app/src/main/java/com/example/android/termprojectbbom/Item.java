@@ -14,6 +14,10 @@ public class Item {
 
     private List<ItemInfo> itemInfoList;
 
+    pulic Item()
+    {
+    }
+
     public Item(String name, int logoImageId)
     {
         this.name = name;

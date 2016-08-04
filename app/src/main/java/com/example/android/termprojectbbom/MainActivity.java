@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     private ListView mItemListView;
     private GridView mItemGridView;
 
+    private int temp_val;
+
     private List<Item> mItems;
     private List<Item> tempItems;
     private List<Item> likeItems;
